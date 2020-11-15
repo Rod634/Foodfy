@@ -1,0 +1,48 @@
+{%extends "layout.njk"%}
+
+{%block content%}
+    <div class="container">
+        <div class="recipe-banner">
+        <img src="{{recipe.image}}" alt="">
+        </div>
+
+        <div class="recipie-title">
+            <h1>{{recipe.title}}</h1>
+            <h2>{{recipe.author}}</h2>
+        </div>
+
+        <div class="recipe-about">
+            <div class="recipe-about-title">
+                <h3>Ingredientes</h3>
+                <p id="hide_ingredients">ESCONDER</p>
+            </div>
+            <div class="ingredients">
+                <ul>
+                    {%for item in recipe.ingredients%}
+                    <li>{{item}}</li>
+                    {%endfor%}
+                </ul>
+                
+            </div>
+
+            <div class="recipe-about-title">
+                <h3>Modo de preparo</h3>
+                <p id="hide_preparation">ESCONDER</p>
+            </div>
+            <div class="preparation">
+                {%for item in recipe.preparation%}
+                    <p>{{item}}</p>
+                {%endfor%}
+            </div>
+
+
+            <div class="recipe-about-title">
+                <h3>Informações adicionais</h3>
+                <p id="hide_info">ESCONDER</p>
+            </div>
+            <div class="info">
+                <p>{{recipe.information}}</p>
+            </div>
+        </div>
+    </div>
+{%endblock%}
