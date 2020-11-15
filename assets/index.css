@@ -1,0 +1,100 @@
+/* //banner\\ */
+
+.banner {
+    width: 100%;
+    background-color: #FBDFDB;
+    border-radius: 3rem;
+    align-items: center;
+    display: flex;
+}
+
+.banner-text {
+    font-size: 1.6rem;
+    width: 35.5rem;
+    height: 12.6rem;
+    margin-left: 6rem;
+}
+
+.banner-text p {
+    font-size: 2rem;
+    line-height: 3rem;
+    max-width: 35.5rem;
+    margin-top: 1rem;
+}
+
+.banner-img {
+    margin: 7% 9% 0 auto;
+}
+
+/* //most-viewed\\ */
+
+.recipes-menu {
+    font-size: 1.6rem;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    width: 30rem;
+    height: 20rem;
+    margin: 2rem auto 0 auto;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card-img img{
+    width: 100%;
+    height: 13rem;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: normal;
+}
+
+.card p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #777777;
+}
+
+
+/* //Media queries\\ */
+
+@media(max-width:1096px){
+    .banner-text, .banner-text p {
+        margin-bottom: 5rem;
+    }
+}
+
+@media(max-width:560px){
+    .banner{
+       flex-direction: column-reverse;
+    }
+
+    .banner-img{
+        margin: 2.1rem auto;
+    }
+ }
+
+
+@media(max-width:460px){
+    .banner-text p {
+        text-align: center;
+        font-size: 1.6rem;
+        max-width: 27.5rem;
+    }
+ }
+
